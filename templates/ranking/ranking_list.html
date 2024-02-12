@@ -1,0 +1,14 @@
+{% extends 'ranking/base.html' %}
+
+{% block content %}
+  {% for ranking in rankings %}
+  <div class="col-md-12">
+    <div class="h-100 p-5 bg-light border rounded-3">
+      <h2>ランキング名:{{ ranking.ranking_name }}</h2>
+      <p>ランキング数: {{ ranking.ranking_num }}</p>
+      <a href="{% url 'ranking_detail' ranking_name=ranking.ranking_name %}" class="btn btn-outline-secondary" type="button">Detail</a>
+      <a href="{% url 'ranking_delete' ranking_name=ranking.ranking_name %}" class="btn btn-outline-danger" type="button">Delete</a>
+    </div>
+  </div>
+  {% endfor %}
+{% endblock %}

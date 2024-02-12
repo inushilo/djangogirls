@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+  {% for post in posts %}
+    <div class="col-md-12">
+      <div class="h-100 p-5 bg-light border rounded-3">
+        <h2>タイトル:{{ post.title }}</h2>
+        <p>{{ post.text|linebreaksbr }}</p><br>
+        <p>公開日: {{ post.published_date }}</p>
+        <a href="{% url 'post_detail' pk=post.pk %}" class="btn btn-outline-secondary" type="button">Detail</a>
+        <a href="{% url 'post_delete' pk=post.pk %}" class="btn btn-outline-danger" type="button">Delete</a>
+      </div>
+    </div>
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    <div class="post col-md-12">
+      <div class="h-100 p-5 bg-light border rounded-3">
+        <h2>タイトル:{{ post.title }}</h2>
+        <p>{{ post.text|linebreaksbr }}</p><br>
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}<br>
+        <a href="{% url 'post_edit' pk=post.pk %}" class="btn btn-outline-secondary" type="button">Edit</a>
+      </div>
+    </div>
+{% endblock %}

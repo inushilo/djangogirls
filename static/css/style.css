@@ -1,0 +1,98 @@
+body {background-color:burlywood;}
+*, *:before, *:after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.contents{
+	background: rgb(236, 240, 241);
+	margin: auto;
+	margin-bottom: 350px; /* footerの高さ */
+	box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
+}
+footer {
+	position: fixed;
+	z-index: -100;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 350px;
+	padding: 4em;
+	background: #01579B;
+}
+footer p {
+	font-size: 1em;
+	font-weight: 300;
+	color: #039BE5;
+	-webkit-column-count: 2;
+	        column-count: 2;
+	-webkit-column-gap: 50px;
+	        column-gap: 50px;
+	margin-bottom: 2em;
+}
+footer .copyright {
+	float: left;
+	width: 50%;
+}
+footer .copyright p {
+	font-size: 0.7em;
+	line-height: 2em;
+	letter-spacing: 1px;
+	color: #ffffff;
+}
+footer .sns {
+	float: right;
+	width: 50%;
+}
+footer .sns a {
+	font-weight: bold;
+	line-height: 2em;
+	width: 2em;
+	margin: auto 0.1em;
+	float: right;
+	-webkit-transition: all, 0.3s;
+	        transition: all, 0.3s;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+	border-radius: 4px;
+	background-color: #00acc1;
+}
+footer .sns a:hover {
+	-webkit-transition: all, 0.3s;
+	        transition: all, 0.3s;
+	background-color: #222222;
+}
+footer .sns .insta {
+	background-color: #e4405f;
+}
+footer .sns .fb {
+	background-color: #3b5999;
+}
+footer .sns .tw {
+	background-color: #55acee;
+}
+
+body {
+  font-family:'Noto Sans JP',sans-serif;
+  background-color:#f6f5f4;
+}
+
+.side {
+ background-color:#1266aa;
+ width:20%;
+ display: flex;
+ text-align:center;
+ margin-bottom: 350px
+} 
+
+.content {
+ background-color:#ffffff00;
+ width:80%;
+ height:100%;
+ text-align:center;
+}
+
+article {
+ display:flex;/*サイドバーとメインコンテンツを横並びにする                指定をした*/
+}

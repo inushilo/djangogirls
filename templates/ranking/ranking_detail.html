@@ -1,0 +1,13 @@
+{% extends 'ranking/base.html' %}
+
+{% block content %}
+  {% for ranking in rankings %}
+  <div class="col-md-12">
+    <div class="h-100 p-5 bg-light border rounded-3">
+      <h2>順位:{{ ranking.rank }}</h2>
+      <h3>アプリ名:{{ ranking.app_name }}</h3>
+      <h3>ダウンロード数:{{ ranking.download_value }}</h3>
+    </div>
+  </div>
+  {% endfor %}
+{% endblock %}

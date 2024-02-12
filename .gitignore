@@ -1,0 +1,7 @@
+/.DS_Store
+/db.sqlite3
+/myvenv
+*.pyc
+*~
+/.vscode
+__pycache__

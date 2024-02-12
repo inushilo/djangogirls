@@ -1,0 +1,11 @@
+{% extends 'ranking/base.html' %}
+
+{% block content %}
+  <div class="col-md-12">
+    <div class="h-100 p-5 bg-light border rounded-3">
+        <h2>Download Ranking</h2>
+        <form method="POST" class="post-form">{% csrf_token %}
+          {{ form.as_p }}
+          <button type="submit" class="save btn btn-outline-primary">Save</button>
+        </form>
+{% endblock %}
